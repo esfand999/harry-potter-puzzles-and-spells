@@ -97,15 +97,15 @@ grim.4.path=.........
 grim.4.path=.....<<xx
 grim.4.path=.....<<xx
 
-blockers=111222111
-blockers=111222111
-blockers=.1122211.
+blockers=12.222.21
+blockers=12.222.21
+blockers=.2.222.2.
 blockers=.........
 blockers=.........
 blockers=.........
-blockers=.1122211.
-blockers=111222111
-blockers=111222111
+blockers=.2.222.2.
+blockers=12.222.21
+blockers=12.222.21
 
 boost=.1...1...
 boost=.......1.
@@ -121,7 +121,7 @@ boost=.........
 
 target.blockers.className=blocker
 target.blockers.color=s
-target.blockers.goal=50
+target.blockers.goal=38
 target.blockers.min=10
 target.blockers.max=50
 target.blockers.percent=0
