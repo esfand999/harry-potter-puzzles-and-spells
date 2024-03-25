@@ -1,0 +1,120 @@
+# ----- Level mp_7151 ---------------------------
+# Designer: Esfandyar
+# Goals: Jelly Slug, Dragon Egg, Flag
+# Difficulty Target: Easy
+
+win=collect	
+win=jellyslugs 5
+win=BigEgg 2
+win=flag 10		
+
+lose=moves 28
+
+# ----- Star/Points Targets --------------------
+
+star=1000		
+star=5000		
+star=115000	
+
+# ----- Gameboard Items --------------------
+
+new=rbgyw
+
+color.r=Red
+color.b=Blue
+color.g=Green
+color.y=Yellow
+color.w=White
+color.f=Flag|flag|true
+
+weights=20 20 20 20 20	
+
+flag_rules=100,6,1,10 
+
+# ----- The Gameboard --------------------
+
+row=RRRRRRRRR
+row=RRRRRRRRR
+row=RRRRRRRRR
+row=RRRRRRRRR
+row=RRRRRRRRR
+row=RRRRRRRRR
+row=RRRRRRRRR
+row=.RRRRRRR.
+row=.RRRRRRR.
+
+jellySlugs=.........
+jellySlugs=.........
+jellySlugs=...v.v...
+jellySlugs=...222...
+jellySlugs=...222...
+jellySlugs=...^^^...
+jellySlugs=.........
+jellySlugs=.........
+jellySlugs=.........
+
+bigEgg.1.pos=1,0
+bigEgg.1.level=3
+
+bigEgg.2.pos=6,0
+bigEgg.2.level=3
+
+flags=1.......4
+flags=1.......4
+flags=2.......5
+flags=2.......5
+flags=3.......6
+flags=3.......6
+flags=.........
+flags=.........
+flags=.........
+
+boost=.1...1...
+boost=.......1.
+boost=.........
+boost=.1.......
+boost=.........
+boost=.........
+boost=.........
+boost=....1....
+boost=...1.....
+
+# ----- Collectable Items --------------------
+
+target.flag.className=flag
+target.flag.sprite=Flag_HUD
+target.flag.color=f
+target.flag.goal=10
+target.flag.type=flyto
+target.flag.rotateOnFlyTo=false
+target.flag.flyToUI=CollectorMaster2
+target.flag.dropColumnFilter=11.....11
+
+# ----- Special Rules ----------------------
+
+rack_intro=type 1 duration 1.00 delay .1
+rack_outro=type 2 duration 1.00 delay 0.25	
+
+bg_color=255 255 255 255
+
+music=
+musicIsSequential=
+music_delay= 																			
+two_by_two_splitter=true	
+square_match=true		
+
+bonus=6 deleter
+bonus=11 deleter
+bonus=15 deleter
+bonus=19 deleter
+
+# ----- Power Ups --------------------------
+ 
+inLevelPowerup=powerup_shovel #Boxing Glove    
+inLevelPowerup=powerup_rowclear #Arrow	
+inLevelPowerup=powerup_basket #Gobstopper
+inLevelPowerup=powerup_super_plump # Butterfly	
+
+# ----- Secondary Cascade Commands ---------
+
+explosiveness=4

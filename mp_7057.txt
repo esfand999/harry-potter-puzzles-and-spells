@@ -1,0 +1,167 @@
+# ----- Level mp_7057 ---------------------------
+# Designer: Esfandyar 
+# Goals: Mail, Ticket, Newspaper
+# Spells: Cistem Aperio, Lumos
+# Difficulty Target: Medium
+
+win=collect	
+win=mail 10
+win=ticket 12
+win=newspaper 3
+
+lose=moves 24
+
+# ----- Star/Points Targets --------------------
+
+star=1000		
+star=5000		
+star=115000	
+
+# ----- Gameboard Items --------------------
+
+new=rbgyw
+
+color.r=Red
+color.b=Blue
+color.g=Green
+color.y=Yellow
+color.w=White
+color.m=Mail|mail|true
+color.t=Ticket|ticket|true
+
+weights=20 20 20 20 20	
+
+ticket_rules=100,7,3,12 (cascade percentage, max on rack, max per turn, max per lvl)  
+
+mail_rules=100,9,1,10 (cascade percentage, max on rack, max per turn, max per level)
+
+# ----- The Gameboard --------------------
+
+row=RRwRwRRRR
+row=RRRwRwRRR
+row=RRRRwRwR.
+row=RRRRRwRwR
+row=RRRRRRwRw
+row=RRRRRwRw.
+row=RRRRwRwRR
+row=RRRwRwRRR
+row=RRwRwRRR.
+
+mail=.3.......
+mail=..3......
+mail=...3.....
+mail=....3....
+mail=.....3...
+mail=....3....
+mail=...3.....
+mail=..3......
+mail=.3.......
+
+tickets=.........
+tickets=Tt.......
+tickets=Tt.......
+tickets=Tt.......
+tickets=Tt.......
+tickets=Tt.......
+tickets=Tt.......
+tickets=Tt.......
+tickets=.........
+
+newspaper.row=.......11
+newspaper.row=.......11
+newspaper.row=.........
+newspaper.row=.......22
+newspaper.row=.......22
+newspaper.row=.........
+newspaper.row=.......33
+newspaper.row=.......33
+newspaper.row=.........
+
+newspaper.height1=4
+newspaper.height2=4
+newspaper.height3=4
+newspaper.height4=4
+
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=...111...
+SpellCistemAperio.chest=...111…
+
+dark=1111.....
+dark=1111.....
+dark=1111.....
+dark=.........
+dark=.........
+dark=.........
+dark=.........
+dark=.........
+dark=.........
+
+boost=....1....
+boost=.....1...
+boost=..1......
+boost=.....1...
+boost=....1....
+boost=.......1.
+boost=..1......
+boost=.........
+boost=.........
+
+# ----- Collectable Items --------------------
+
+target.mail.className=mail
+target.mail.color=m
+target.mail.goal=10
+target.mail.sprite=Mail
+target.mail.type=flyto
+target.mail.rotateOnFlyTo=false
+target.mail.flyToUI=CollectorMaster2
+
+target.ticket.className=ticket
+target.ticket.color=t
+target.ticket.goal=12
+target.ticket.type=flyto
+target.ticket.rotateOnFlyTo=false
+target.ticket.flyToUI=CollectorMaster1
+
+# ----- Spell Rules ----------------------
+
+SpellLumos.enabled=true
+
+SpellCistemAperio.enabled=true
+SpellCistemAperio.benefit_supers=Hsplitter,5
+SpellCistemAperio.benefit_supers=seeker,5
+
+# ----- Special Rules ----------------------
+
+rack_intro=type 1 duration 1.00 delay .1
+rack_outro=type 2 duration 1.00 delay 0.25	
+
+bg_color=255 255 255 255
+
+music=
+musicIsSequential=
+music_delay= 																			
+two_by_two_splitter=true	
+square_match=true		
+
+bonus=6 deleter
+bonus=11 deleter
+bonus=15 deleter
+bonus=19 deleter
+
+# ----- Power Ups --------------------------
+ 
+inLevelPowerup=powerup_shovel #Boxing Glove    
+inLevelPowerup=powerup_rowclear #Arrow	
+inLevelPowerup=powerup_basket #Gobstopper
+inLevelPowerup=powerup_super_plump # Butterfly	
+
+# ----- Secondary Cascade Commands ---------
+
+explosiveness=4

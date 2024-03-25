@@ -1,0 +1,172 @@
+# ----- Level mp_7405 ---------------------------
+# Designer: Esfandyar
+# Goals: Grim, Spread, Lantern
+# Difficulty Target: Hard
+
+win=collect	
+win=grim 4
+win=spread
+
+lose=moves 20
+
+# ----- Star/Points Targets --------------------
+
+star=1000		
+star=5000		
+star=115000	
+
+# ----- Gameboard Items --------------------
+
+new=rbgyv
+
+color.r=Red
+color.b=Blue
+color.g=Green
+color.y=Yellow
+color.v=Violet
+color.s=Blocker|blocker|true  
+
+weights=20 20 20 20 20
+
+blocker_weights=0 0 0 
+
+# ----- The Gameboard --------------------
+
+row=RRRRRRRRR
+row=RRRRRRRRR
+row=.RRRRRRR.
+row=RRRRRRRRR
+row=RRRR.RRRR
+row=RRRRRRRRR
+row=.RRRRRRR.
+row=RRRRRRRRR
+row=RRRRRRRRR
+
+spread=.........
+spread=.........
+spread=.........
+spread=1.......1
+spread=1.......1
+spread=1.......1
+spread=.........
+spread=.........
+spread=.........
+
+grim.1.level=3
+grim.2.level=3
+grim.3.level=3
+grim.4.level=3
+
+grim.1.path=xx>>.....
+grim.1.path=xx>>......
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=..........
+grim.1.path=..........
+
+grim.2.path=......<<xx
+grim.2.path=......<<xx
+grim.2.path=.........
+grim.2.path=.........
+grim.2.path=.........
+grim.2.path=.........
+grim.2.path=.........
+grim.2.path=.........
+grim.2.path=.........
+
+grim.3.path=.........
+grim.3.path=.........
+grim.3.path=.........
+grim.3.path=.........
+grim.3.path=.........
+grim.3.path=.........
+grim.3.path=.........
+grim.3.path=xx>>.....
+grim.3.path=xx>>.....
+
+grim.4.path=.........
+grim.4.path=.........
+grim.4.path=.........
+grim.4.path=.........
+grim.4.path=.........
+grim.4.path=.........
+grim.4.path=.........
+grim.4.path=.....<<xx
+grim.4.path=.....<<xx
+
+blockers=111222111
+blockers=111222111
+blockers=.1122211.
+blockers=.........
+blockers=.........
+blockers=.........
+blockers=.1122211.
+blockers=111222111
+blockers=111222111
+
+boost=.1...1...
+boost=.......1.
+boost=.........
+boost=...1.1...
+boost=.........
+boost=.........
+boost=.........
+boost=........1
+boost=.........
+
+# ----- Collectable Items ------------------
+
+target.blockers.className=blocker
+target.blockers.color=s
+target.blockers.goal=50
+target.blockers.min=10
+target.blockers.max=50
+target.blockers.percent=0
+target.blockers.levelWeights=0 100
+target.blockers.sprite=Blocker
+target.blockers.type=flyto
+target.blockers.rotateOnFlyTo=false
+target.blockers.flyToUI=CollectorMaster1
+#target.blockers.dropColumnFilter=111111111
+
+# ----- Special Rules ----------------------
+
+level_intro=grim
+
+rack_intro=type 2 duration 0.3 delay 0.01
+rack_outro=type 2 duration 0.3 delay 0.01
+
+bg_color=255 255 255 255
+bg_style=alt33
+
+music=
+musicIsSequential=
+music_delay=
+
+square_match=true
+two_by_two_splitter=true
+
+bonus=6 deleter
+bonus=11 deleter
+bonus=15 deleter
+bonus=19 deleter
+
+# ----- Power Ups --------------------------
+
+preLevelPowerup=powerup_one_splitter
+preLevelPowerup=powerup_1bubble
+preLevelPowerup=powerup_1seeker
+
+inLevelPowerup=powerup_shovel
+inLevelPowerup=powerup_basket
+inLevelPowerup=powerup_rowclear
+inLevelPowerup=powerup_columnclear
+
+# ----- Secondary Cascade Commands ---------
+
+explosiveness=5
+
+cpu_assistance=off

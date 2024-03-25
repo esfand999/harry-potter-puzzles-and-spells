@@ -1,0 +1,120 @@
+# ----- Level mp_6995 ---------------------------
+# Designer: Esfandyar 
+# Goals: Locks, Spread, Gramophone
+# Difficulty Target: Medium
+
+win=locks 
+win=spread
+win=collect	
+
+lose=moves 22
+
+# ----- Star/Points Targets --------------------
+
+star=1000		
+star=5000		
+star=115000	
+
+# ----- Gameboard Items --------------------
+
+new=rbgyv
+
+color.r=Red
+color.b=Blue
+color.g=Green
+color.y=Yellow
+color.v-violet
+
+weights=20 20 20 20 20 
+
+# ----- The Gameboard --------------------
+
+row=R.......R
+row=R.RRbRR.R
+row=R.RRRRR.R
+row=R.RRbRR.R
+row=R.RRRRR.R
+row=R.RRvRR.R
+row=RrRRRRRgR
+row=RrRRvRRgR
+row=RrRRRRRgR
+
+lock=.........
+lock=.........
+lock=.........
+lock=.........
+lock=.........
+lock=.........
+lock=.3.....3.
+lock=.43...34.
+lock=.443.344.
+
+gramophone.row=.........
+gramophone.row=....1....
+gramophone.row=.........
+gramophone.row=....1....
+gramophone.row=.........
+gramophone.row=....1....
+gramophone.row=.........
+gramophone.row=....1....
+gramophone.row=.........
+
+gramophone.endingFanfare=ragtime
+
+spread=1.......1
+spread=1.......1
+spread=1.......1
+spread=.........
+spread=.........
+spread=.........
+spread=.........
+spread=.........
+spread=.........
+
+boost=.........
+boost=..1...1..
+boost=...1.1...
+boost=.........
+boost=.........
+boost=.........
+boost=1.......1
+boost=.........
+boost=.........
+
+# ----- Collectable Items --------------------
+				
+#Gramophone Target
+target.gramophone.className=gramophone
+target.gramophone.sprite=GramophoneHud
+target.gramophone.type=flyto
+target.gramophone.goal=20
+target.gramophone.flyToUI=CollectorMaster1
+
+# ----- Special Rules ----------------------
+
+rack_intro=type 1 duration 1.00 delay .1
+rack_outro=type 2 duration 1.00 delay 0.25	
+
+bg_color=255 255 255 255
+
+music=
+musicIsSequential=
+music_delay= 																			
+two_by_two_splitter=true	
+square_match=true		
+
+bonus=6 deleter
+bonus=11 deleter
+bonus=15 deleter
+bonus=19 deleter
+
+# ----- Power Ups --------------------------
+ 
+inLevelPowerup=powerup_shovel #Boxing Glove    
+inLevelPowerup=powerup_rowclear #Arrow	
+inLevelPowerup=powerup_basket #Gobstopper
+inLevelPowerup=powerup_super_plump # Butterfly	
+
+# ----- Secondary Cascade Commands ---------
+
+explosiveness=4
