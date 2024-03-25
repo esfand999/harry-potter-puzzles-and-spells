@@ -1,1 +1,2 @@
-# harry-potter-puzzles-and-spells
+# Harry Potter: Puzzles and Spells
+WRP Test Level Pack
